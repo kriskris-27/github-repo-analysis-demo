@@ -1,0 +1,3516 @@
+{
+  "repoUrl": "https://github.com/kriskris-27/ThesisLP-dock.git",
+  "stack": {
+    "dependencies": {},
+    "devDependencies": {},
+    "frameworkHints": [],
+    "errors": []
+  },
+  "scan": {
+    "roots": [
+      ""
+    ],
+    "excludedDirs": [
+      "node_modules",
+      ".git",
+      "dist",
+      "build",
+      "coverage",
+      ".next",
+      "out",
+      ".turbo",
+      ".vercel",
+      "vendor",
+      ".cache",
+      "tmp",
+      ".tmp",
+      "logs",
+      ".yarn",
+      ".pnpm",
+      ".vscode",
+      ".idea",
+      ".husky",
+      ".github",
+      "examples",
+      "example",
+      "demo",
+      "demos",
+      "tests",
+      "__tests__",
+      "test",
+      "spec",
+      "cypress",
+      "e2e",
+      "scripts",
+      "tools",
+      "docs",
+      "documentation",
+      "public",
+      "static"
+    ]
+  },
+  "repoMeta": {
+    "readme": "readme.md",
+    "license": null,
+    "ci": {
+      "githubActions": false
+    },
+    "docker": false
+  },
+  "counts": {
+    "files": 36,
+    "functions": 38,
+    "classes": 0,
+    "reactComponents": 0,
+    "expressRoutes": 0,
+    "nestRoutes": 0,
+    "nextApiRoutes": 0,
+    "cycles": 0
+  },
+  "features": {
+    "reactComponents": [],
+    "expressRoutes": [],
+    "nestRoutes": [],
+    "nextApiRoutes": []
+  },
+  "graphs": {
+    "dependencies": {
+      "nodes": [
+        "frontend-1/frontend/vite.config.ts",
+        "server-1/server/src/app.ts",
+        "server-1/server/src/index.ts",
+        "frontend-1/frontend/src/App.tsx",
+        "frontend-1/frontend/src/main.tsx",
+        "frontend-1/frontend/src/vite-env.d.ts",
+        "server-1/server/src/config/passport.ts",
+        "server-1/server/src/controllers/aiController.ts",
+        "server-1/server/src/controllers/authController.ts",
+        "server-1/server/src/controllers/courseController.ts",
+        "server-1/server/src/middleware/authMiddleware.ts",
+        "server-1/server/src/models/StructuredDoc.ts",
+        "server-1/server/src/models/User.ts",
+        "server-1/server/src/routes/aiRoutes.ts",
+        "server-1/server/src/routes/authRoutes.ts",
+        "server-1/server/src/routes/courseRoutes.ts",
+        "server-1/server/src/utils/aiml.ts",
+        "server-1/server/src/utils/jwt.ts",
+        "server-1/server/src/utils/openai.ts",
+        "frontend-1/frontend/src/api/axios.ts",
+        "frontend-1/frontend/src/auth/AuthContext.tsx",
+        "frontend-1/frontend/src/auth/Headname.tsx",
+        "frontend-1/frontend/src/auth/Login.tsx",
+        "frontend-1/frontend/src/auth/OAuthSuccess.tsx",
+        "frontend-1/frontend/src/auth/ProtectedRoute.tsx",
+        "frontend-1/frontend/src/auth/Signup.tsx",
+        "frontend-1/frontend/src/components/ChatBot.tsx",
+        "frontend-1/frontend/src/components/DocumentStructurer.tsx",
+        "frontend-1/frontend/src/components/Layout.tsx",
+        "frontend-1/frontend/src/components/StudentDashboard.tsx",
+        "frontend-1/frontend/src/pages/AdminDashboard.tsx",
+        "frontend-1/frontend/src/pages/AdminStructure.tsx",
+        "frontend-1/frontend/src/pages/Dashboard.tsx",
+        "frontend-1/frontend/src/pages/Unauthorized.tsx",
+        "frontend-1/frontend/src/types/api.ts",
+        "frontend-1/frontend/eslint.config.js"
+      ],
+      "edges": [
+        {
+          "from": "frontend-1/frontend/vite.config.ts",
+          "to": []
+        },
+        {
+          "from": "server-1/server/src/app.ts",
+          "to": [
+            "server-1/server/src/config/passport.ts",
+            "server-1/server/src/routes/authRoutes.ts",
+            "server-1/server/src/routes/aiRoutes.ts",
+            "server-1/server/src/routes/courseRoutes.ts"
+          ]
+        },
+        {
+          "from": "server-1/server/src/index.ts",
+          "to": [
+            "server-1/server/src/app.ts"
+          ]
+        },
+        {
+          "from": "frontend-1/frontend/src/App.tsx",
+          "to": [
+            "frontend-1/frontend/src/auth/Login.tsx",
+            "frontend-1/frontend/src/pages/Dashboard.tsx",
+            "frontend-1/frontend/src/pages/AdminDashboard.tsx",
+            "frontend-1/frontend/src/auth/ProtectedRoute.tsx",
+            "frontend-1/frontend/src/auth/Signup.tsx",
+            "frontend-1/frontend/src/auth/OAuthSuccess.tsx",
+            "frontend-1/frontend/src/components/DocumentStructurer.tsx",
+            "frontend-1/frontend/src/components/StudentDashboard.tsx",
+            "frontend-1/frontend/src/components/Layout.tsx",
+            "frontend-1/frontend/src/auth/AuthContext.tsx",
+            "frontend-1/frontend/src/pages/Unauthorized.tsx"
+          ]
+        },
+        {
+          "from": "frontend-1/frontend/src/main.tsx",
+          "to": [
+            "frontend-1/frontend/src/App.tsx",
+            "frontend-1/frontend/src/auth/AuthContext.tsx"
+          ]
+        },
+        {
+          "from": "frontend-1/frontend/src/vite-env.d.ts",
+          "to": []
+        },
+        {
+          "from": "server-1/server/src/config/passport.ts",
+          "to": [
+            "server-1/server/src/models/User.ts"
+          ]
+        },
+        {
+          "from": "server-1/server/src/controllers/aiController.ts",
+          "to": [
+            "server-1/server/src/utils/aiml.ts",
+            "server-1/server/src/models/StructuredDoc.ts",
+            "server-1/server/src/middleware/authMiddleware.ts"
+          ]
+        },
+        {
+          "from": "server-1/server/src/controllers/authController.ts",
+          "to": [
+            "server-1/server/src/models/User.ts",
+            "server-1/server/src/utils/jwt.ts"
+          ]
+        },
+        {
+          "from": "server-1/server/src/controllers/courseController.ts",
+          "to": [
+            "server-1/server/src/middleware/authMiddleware.ts",
+            "server-1/server/src/models/StructuredDoc.ts"
+          ]
+        },
+        {
+          "from": "server-1/server/src/middleware/authMiddleware.ts",
+          "to": [
+            "server-1/server/src/models/User.ts"
+          ]
+        },
+        {
+          "from": "server-1/server/src/models/StructuredDoc.ts",
+          "to": []
+        },
+        {
+          "from": "server-1/server/src/models/User.ts",
+          "to": []
+        },
+        {
+          "from": "server-1/server/src/routes/aiRoutes.ts",
+          "to": [
+            "server-1/server/src/controllers/aiController.ts",
+            "server-1/server/src/middleware/authMiddleware.ts"
+          ]
+        },
+        {
+          "from": "server-1/server/src/routes/authRoutes.ts",
+          "to": [
+            "server-1/server/src/controllers/authController.ts",
+            "server-1/server/src/utils/jwt.ts",
+            "server-1/server/src/middleware/authMiddleware.ts"
+          ]
+        },
+        {
+          "from": "server-1/server/src/routes/courseRoutes.ts",
+          "to": [
+            "server-1/server/src/controllers/courseController.ts",
+            "server-1/server/src/middleware/authMiddleware.ts"
+          ]
+        },
+        {
+          "from": "server-1/server/src/utils/aiml.ts",
+          "to": []
+        },
+        {
+          "from": "server-1/server/src/utils/jwt.ts",
+          "to": []
+        },
+        {
+          "from": "server-1/server/src/utils/openai.ts",
+          "to": []
+        },
+        {
+          "from": "frontend-1/frontend/src/api/axios.ts",
+          "to": []
+        },
+        {
+          "from": "frontend-1/frontend/src/auth/AuthContext.tsx",
+          "to": [
+            "frontend-1/frontend/src/api/axios.ts"
+          ]
+        },
+        {
+          "from": "frontend-1/frontend/src/auth/Headname.tsx",
+          "to": []
+        },
+        {
+          "from": "frontend-1/frontend/src/auth/Login.tsx",
+          "to": [
+            "frontend-1/frontend/src/auth/Headname.tsx",
+            "frontend-1/frontend/src/auth/AuthContext.tsx"
+          ]
+        },
+        {
+          "from": "frontend-1/frontend/src/auth/OAuthSuccess.tsx",
+          "to": [
+            "frontend-1/frontend/src/auth/AuthContext.tsx"
+          ]
+        },
+        {
+          "from": "frontend-1/frontend/src/auth/ProtectedRoute.tsx",
+          "to": [
+            "frontend-1/frontend/src/auth/AuthContext.tsx"
+          ]
+        },
+        {
+          "from": "frontend-1/frontend/src/auth/Signup.tsx",
+          "to": [
+            "frontend-1/frontend/src/api/axios.ts",
+            "frontend-1/frontend/src/auth/Headname.tsx"
+          ]
+        },
+        {
+          "from": "frontend-1/frontend/src/components/ChatBot.tsx",
+          "to": [
+            "frontend-1/frontend/src/api/axios.ts",
+            "frontend-1/frontend/src/types/api.ts"
+          ]
+        },
+        {
+          "from": "frontend-1/frontend/src/components/DocumentStructurer.tsx",
+          "to": [
+            "frontend-1/frontend/src/api/axios.ts",
+            "frontend-1/frontend/src/auth/AuthContext.tsx",
+            "frontend-1/frontend/src/types/api.ts"
+          ]
+        },
+        {
+          "from": "frontend-1/frontend/src/components/Layout.tsx",
+          "to": [
+            "frontend-1/frontend/src/auth/AuthContext.tsx"
+          ]
+        },
+        {
+          "from": "frontend-1/frontend/src/components/StudentDashboard.tsx",
+          "to": [
+            "frontend-1/frontend/src/api/axios.ts",
+            "frontend-1/frontend/src/types/api.ts",
+            "frontend-1/frontend/src/components/ChatBot.tsx"
+          ]
+        },
+        {
+          "from": "frontend-1/frontend/src/pages/AdminDashboard.tsx",
+          "to": [
+            "frontend-1/frontend/src/auth/AuthContext.tsx"
+          ]
+        },
+        {
+          "from": "frontend-1/frontend/src/pages/AdminStructure.tsx",
+          "to": [
+            "frontend-1/frontend/src/api/axios.ts"
+          ]
+        },
+        {
+          "from": "frontend-1/frontend/src/pages/Dashboard.tsx",
+          "to": [
+            "frontend-1/frontend/src/auth/AuthContext.tsx"
+          ]
+        },
+        {
+          "from": "frontend-1/frontend/src/pages/Unauthorized.tsx",
+          "to": []
+        },
+        {
+          "from": "frontend-1/frontend/src/types/api.ts",
+          "to": []
+        },
+        {
+          "from": "frontend-1/frontend/eslint.config.js",
+          "to": []
+        }
+      ],
+      "cycles": []
+    }
+  },
+  "workflow": [
+    {
+      "file": "frontend-1/frontend/src/App.tsx",
+      "function": "RootRedirect",
+      "steps": [
+        "Execute main logic"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/auth/AuthContext.tsx",
+      "function": "useAuth",
+      "steps": [
+        "Execute main logic"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/auth/Login.tsx",
+      "function": "Login",
+      "steps": [
+        "Log result to console"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/auth/OAuthSuccess.tsx",
+      "function": "OAuthSuccess",
+      "steps": [
+        "Execute main logic"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/auth/Signup.tsx",
+      "function": "Signup",
+      "steps": [
+        "Log result to console"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/components/DocumentStructurer.tsx",
+      "function": "DocumentStructurer",
+      "steps": [
+        "Log result to console"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/components/Layout.tsx",
+      "function": "Layout",
+      "steps": [
+        "Execute main logic"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/components/StudentDashboard.tsx",
+      "function": "StudentDashboard",
+      "steps": [
+        "Execute main logic"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/pages/AdminDashboard.tsx",
+      "function": "AdminDashboard",
+      "steps": [
+        "Execute main logic"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/pages/AdminStructure.tsx",
+      "function": "AdminStructure",
+      "steps": [
+        "Execute main logic"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/pages/Dashboard.tsx",
+      "function": "Dashboard",
+      "steps": [
+        "Execute main logic"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/pages/Unauthorized.tsx",
+      "function": "Unauthorized",
+      "steps": [
+        "Execute main logic"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "vite.config.ts",
+      "relativePath": "frontend-1/frontend/vite.config.ts",
+      "imports": [
+        {
+          "source": "vite",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "defineConfig",
+              "local": "defineConfig"
+            }
+          ]
+        },
+        {
+          "source": "@vitejs/plugin-react",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "react"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {},
+      "calls": {},
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "app.ts",
+      "relativePath": "server-1/server/src/app.ts",
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "express"
+            }
+          ]
+        },
+        {
+          "source": "cors",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "cors"
+            }
+          ]
+        },
+        {
+          "source": "dotenv",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "dotenv"
+            }
+          ]
+        },
+        {
+          "source": "path",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "path"
+            }
+          ]
+        },
+        {
+          "source": "cookie-parser",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "cookieParser"
+            }
+          ]
+        },
+        {
+          "source": "passport",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "passport"
+            }
+          ]
+        },
+        {
+          "source": "./config/passport",
+          "specifiers": []
+        },
+        {
+          "source": "./routes/authRoutes",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "authRoutes"
+            }
+          ]
+        },
+        {
+          "source": "./routes/aiRoutes",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "aiRoutes"
+            }
+          ]
+        },
+        {
+          "source": "./routes/courseRoutes",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "courseRoutes"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [
+        "FRONTEND_ORIGIN"
+      ],
+      "complexity": {},
+      "calls": {},
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "index.ts",
+      "relativePath": "server-1/server/src/index.ts",
+      "imports": [
+        {
+          "source": "mongoose",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "mongoose"
+            }
+          ]
+        },
+        {
+          "source": "./app",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "app"
+            }
+          ]
+        }
+      ],
+      "exports": [],
+      "functions": [],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [
+        "PORT",
+        "MONGO_URI"
+      ],
+      "complexity": {},
+      "calls": {},
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "App.tsx",
+      "relativePath": "frontend-1/frontend/src/App.tsx",
+      "imports": [
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "BrowserRouter",
+              "local": "BrowserRouter"
+            },
+            {
+              "kind": "named",
+              "imported": "Routes",
+              "local": "Routes"
+            },
+            {
+              "kind": "named",
+              "imported": "Route",
+              "local": "Route"
+            },
+            {
+              "kind": "named",
+              "imported": "Navigate",
+              "local": "Navigate"
+            }
+          ]
+        },
+        {
+          "source": "./auth/Login",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "Login"
+            }
+          ]
+        },
+        {
+          "source": "./pages/Dashboard",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "Dashboard"
+            }
+          ]
+        },
+        {
+          "source": "./pages/AdminDashboard",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "AdminDashboard"
+            }
+          ]
+        },
+        {
+          "source": "./auth/ProtectedRoute",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "ProtectedRoute"
+            }
+          ]
+        },
+        {
+          "source": "./auth/Signup",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "Signup"
+            }
+          ]
+        },
+        {
+          "source": "./auth/OAuthSuccess",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "OAuthSuccess"
+            }
+          ]
+        },
+        {
+          "source": "./components/DocumentStructurer",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "DocumentStructurer"
+            }
+          ]
+        },
+        {
+          "source": "./components/StudentDashboard",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "StudentDashboard"
+            }
+          ]
+        },
+        {
+          "source": "./components/Layout",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "Layout"
+            }
+          ]
+        },
+        {
+          "source": "./auth/AuthContext",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useAuth",
+              "local": "useAuth"
+            }
+          ]
+        },
+        {
+          "source": "./pages/Unauthorized",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "Unauthorized"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [
+        {
+          "name": "RootRedirect",
+          "kind": "declaration",
+          "async": false,
+          "generator": false,
+          "params": [],
+          "returnType": "any"
+        },
+        {
+          "name": "App",
+          "kind": "declaration",
+          "async": false,
+          "generator": false,
+          "params": [],
+          "returnType": "any"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {
+        "RootRedirect": 3,
+        "App": 1
+      },
+      "calls": {
+        "RootRedirect": [
+          "useAuth"
+        ]
+      },
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "main.tsx",
+      "relativePath": "frontend-1/frontend/src/main.tsx",
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "React"
+            }
+          ]
+        },
+        {
+          "source": "react-dom/client",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "ReactDOM"
+            }
+          ]
+        },
+        {
+          "source": "./App",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "App"
+            }
+          ]
+        },
+        {
+          "source": "./auth/AuthContext",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "AuthProvider",
+              "local": "AuthProvider"
+            }
+          ]
+        },
+        {
+          "source": "./index.css",
+          "specifiers": []
+        }
+      ],
+      "exports": [],
+      "functions": [],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {},
+      "calls": {},
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "vite-env.d.ts",
+      "relativePath": "frontend-1/frontend/src/vite-env.d.ts",
+      "imports": [],
+      "exports": [],
+      "functions": [],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {},
+      "calls": {},
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "passport.ts",
+      "relativePath": "server-1/server/src/config/passport.ts",
+      "imports": [
+        {
+          "source": "passport",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "passport"
+            }
+          ]
+        },
+        {
+          "source": "dotenv",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "dotenv"
+            }
+          ]
+        },
+        {
+          "source": "path",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "path"
+            }
+          ]
+        },
+        {
+          "source": "passport-google-oauth20",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "Strategy",
+              "local": "Strategy"
+            }
+          ]
+        },
+        {
+          "source": "../models/User",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "User"
+            }
+          ]
+        }
+      ],
+      "exports": [],
+      "functions": [],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [
+        "GOOGLE_CLIENT_ID",
+        "GOOGLE_CLIENT_SECRET",
+        "GOOGLE_CALLBACK_URL"
+      ],
+      "complexity": {},
+      "calls": {},
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "aiController.ts",
+      "relativePath": "server-1/server/src/controllers/aiController.ts",
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "Request",
+              "local": "Request"
+            },
+            {
+              "kind": "named",
+              "imported": "Response",
+              "local": "Response"
+            }
+          ]
+        },
+        {
+          "source": "../utils/aiml",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "callAimLapi",
+              "local": "callAimLapi"
+            },
+            {
+              "kind": "named",
+              "imported": "callChatAPI",
+              "local": "callChatAPI"
+            }
+          ]
+        },
+        {
+          "source": "../models/StructuredDoc",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "StructuredDoc"
+            }
+          ]
+        },
+        {
+          "source": "../middleware/authMiddleware",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "AuthRequest",
+              "local": "AuthRequest"
+            }
+          ]
+        }
+      ],
+      "exports": [],
+      "functions": [
+        {
+          "name": "structureDoc",
+          "kind": "arrow",
+          "async": true,
+          "generator": false,
+          "params": [
+            {
+              "name": "req",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/src/middleware/authMiddleware\").AuthRequest"
+            },
+            {
+              "name": "res",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>"
+            }
+          ],
+          "returnType": "Promise<import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>>"
+        },
+        {
+          "name": "saveDoc",
+          "kind": "arrow",
+          "async": true,
+          "generator": false,
+          "params": [
+            {
+              "name": "req",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/src/middleware/authMiddleware\").AuthRequest"
+            },
+            {
+              "name": "res",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>"
+            }
+          ],
+          "returnType": "Promise<import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>>"
+        },
+        {
+          "name": "getUserDocs",
+          "kind": "arrow",
+          "async": true,
+          "generator": false,
+          "params": [
+            {
+              "name": "req",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/src/middleware/authMiddleware\").AuthRequest"
+            },
+            {
+              "name": "res",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>"
+            }
+          ],
+          "returnType": "Promise<import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>>"
+        },
+        {
+          "name": "getDoc",
+          "kind": "arrow",
+          "async": true,
+          "generator": false,
+          "params": [
+            {
+              "name": "req",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/src/middleware/authMiddleware\").AuthRequest"
+            },
+            {
+              "name": "res",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>"
+            }
+          ],
+          "returnType": "Promise<import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>>"
+        },
+        {
+          "name": "updateDoc",
+          "kind": "arrow",
+          "async": true,
+          "generator": false,
+          "params": [
+            {
+              "name": "req",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/src/middleware/authMiddleware\").AuthRequest"
+            },
+            {
+              "name": "res",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>"
+            }
+          ],
+          "returnType": "Promise<import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>>"
+        },
+        {
+          "name": "addToCourse",
+          "kind": "arrow",
+          "async": true,
+          "generator": false,
+          "params": [
+            {
+              "name": "req",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/src/middleware/authMiddleware\").AuthRequest"
+            },
+            {
+              "name": "res",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>"
+            }
+          ],
+          "returnType": "Promise<import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>>"
+        },
+        {
+          "name": "chatWithAI",
+          "kind": "arrow",
+          "async": true,
+          "generator": false,
+          "params": [
+            {
+              "name": "req",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/src/middleware/authMiddleware\").AuthRequest"
+            },
+            {
+              "name": "res",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>"
+            }
+          ],
+          "returnType": "Promise<import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>>"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {
+        "structureDoc": 8,
+        "saveDoc": 6,
+        "getUserDocs": 3,
+        "getDoc": 4,
+        "updateDoc": 7,
+        "addToCourse": 13,
+        "chatWithAI": 12
+      },
+      "calls": {
+        "structureDoc": [
+          "rawText.trim",
+          "json",
+          "res.status",
+          "toISOString",
+          "console.log",
+          "callAimLapi",
+          "JSON.parse",
+          "console.error",
+          "error.message.includes"
+        ],
+        "saveDoc": [
+          "json",
+          "res.status",
+          "toISOString",
+          "Array.isArray",
+          "doc.save",
+          "console.error"
+        ],
+        "getUserDocs": [
+          "json",
+          "res.status",
+          "toISOString",
+          "select",
+          "sort",
+          "StructuredDoc.find",
+          "console.error"
+        ],
+        "getDoc": [
+          "json",
+          "res.status",
+          "toISOString",
+          "StructuredDoc.findOne",
+          "console.error"
+        ],
+        "updateDoc": [
+          "json",
+          "res.status",
+          "toISOString",
+          "Array.isArray",
+          "StructuredDoc.findOne",
+          "doc.save",
+          "console.error"
+        ],
+        "addToCourse": [
+          "json",
+          "res.status",
+          "toISOString",
+          "rawText.trim",
+          "StructuredDoc.findOne",
+          "callAimLapi",
+          "JSON.parse",
+          "lessons.push",
+          "existingDoc.modules.push",
+          "existingDoc.save",
+          "console.error",
+          "error.message.includes"
+        ],
+        "chatWithAI": [
+          "json",
+          "res.status",
+          "toISOString",
+          "message.trim",
+          "callChatAPI",
+          "console.error",
+          "error.message.includes"
+        ]
+      },
+      "callsExternal": {
+        "structureDoc": [
+          "console.log",
+          "console.error"
+        ],
+        "saveDoc": [
+          "console.error"
+        ],
+        "getUserDocs": [
+          "console.error"
+        ],
+        "getDoc": [
+          "console.error"
+        ],
+        "updateDoc": [
+          "console.error"
+        ],
+        "addToCourse": [
+          "console.error"
+        ],
+        "chatWithAI": [
+          "console.error"
+        ]
+      },
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "authController.ts",
+      "relativePath": "server-1/server/src/controllers/authController.ts",
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "Request",
+              "local": "Request"
+            },
+            {
+              "kind": "named",
+              "imported": "Response",
+              "local": "Response"
+            }
+          ]
+        },
+        {
+          "source": "bcryptjs",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "bcrypt"
+            }
+          ]
+        },
+        {
+          "source": "../models/User",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "User"
+            }
+          ]
+        },
+        {
+          "source": "../utils/jwt",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "generateToken",
+              "local": "generateToken"
+            }
+          ]
+        }
+      ],
+      "exports": [],
+      "functions": [
+        {
+          "name": "signup",
+          "kind": "arrow",
+          "async": true,
+          "generator": false,
+          "params": [
+            {
+              "name": "req",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Request<import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express-serve-static-core/index\").ParamsDictionary, any, any, qs.ParsedQs, Record<string, any>>"
+            },
+            {
+              "name": "res",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>"
+            }
+          ],
+          "returnType": "Promise<import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>>"
+        },
+        {
+          "name": "login",
+          "kind": "arrow",
+          "async": true,
+          "generator": false,
+          "params": [
+            {
+              "name": "req",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Request<import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express-serve-static-core/index\").ParamsDictionary, any, any, qs.ParsedQs, Record<string, any>>"
+            },
+            {
+              "name": "res",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>"
+            }
+          ],
+          "returnType": "Promise<import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>>"
+        },
+        {
+          "name": "logout",
+          "kind": "arrow",
+          "async": true,
+          "generator": false,
+          "params": [
+            {
+              "name": "req",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Request<import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express-serve-static-core/index\").ParamsDictionary, any, any, qs.ParsedQs, Record<string, any>>"
+            },
+            {
+              "name": "res",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>"
+            }
+          ],
+          "returnType": "Promise<import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>>"
+        },
+        {
+          "name": "getMe",
+          "kind": "arrow",
+          "async": true,
+          "generator": false,
+          "params": [
+            {
+              "name": "req",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Request<import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express-serve-static-core/index\").ParamsDictionary, any, any, qs.ParsedQs, Record<string, any>>"
+            },
+            {
+              "name": "res",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>"
+            }
+          ],
+          "returnType": "Promise<void>"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [
+        "NODE_ENV"
+      ],
+      "complexity": {
+        "signup": 3,
+        "login": 5,
+        "logout": 3,
+        "getMe": 3
+      },
+      "calls": {
+        "signup": [
+          "User.findOne",
+          "json",
+          "res.status",
+          "bcrypt.hash",
+          "user.save",
+          "generateToken"
+        ],
+        "login": [
+          "User.findOne",
+          "json",
+          "res.status",
+          "bcrypt.compare",
+          "generateToken",
+          "res.cookie"
+        ],
+        "logout": [
+          "res.clearCookie",
+          "json",
+          "res.status"
+        ],
+        "getMe": [
+          "json",
+          "res.status"
+        ]
+      },
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "courseController.ts",
+      "relativePath": "server-1/server/src/controllers/courseController.ts",
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "Response",
+              "local": "Response"
+            }
+          ]
+        },
+        {
+          "source": "../middleware/authMiddleware",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "AuthRequest",
+              "local": "AuthRequest"
+            }
+          ]
+        },
+        {
+          "source": "../models/StructuredDoc",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "StructuredDoc"
+            }
+          ]
+        }
+      ],
+      "exports": [],
+      "functions": [
+        {
+          "name": "getAvailableCourses",
+          "kind": "arrow",
+          "async": true,
+          "generator": false,
+          "params": [
+            {
+              "name": "req",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/src/middleware/authMiddleware\").AuthRequest"
+            },
+            {
+              "name": "res",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>"
+            }
+          ],
+          "returnType": "Promise<void>"
+        },
+        {
+          "name": "getCourse",
+          "kind": "arrow",
+          "async": true,
+          "generator": false,
+          "params": [
+            {
+              "name": "req",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/src/middleware/authMiddleware\").AuthRequest"
+            },
+            {
+              "name": "res",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>"
+            }
+          ],
+          "returnType": "Promise<import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>>"
+        },
+        {
+          "name": "getCourseProgress",
+          "kind": "arrow",
+          "async": true,
+          "generator": false,
+          "params": [
+            {
+              "name": "req",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/src/middleware/authMiddleware\").AuthRequest"
+            },
+            {
+              "name": "res",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>"
+            }
+          ],
+          "returnType": "Promise<import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>>"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {
+        "getAvailableCourses": 2,
+        "getCourse": 4,
+        "getCourseProgress": 3
+      },
+      "calls": {
+        "getAvailableCourses": [
+          "lean",
+          "sort",
+          "select",
+          "StructuredDoc.find",
+          "json",
+          "res.status",
+          "toISOString",
+          "console.error"
+        ],
+        "getCourse": [
+          "lean",
+          "select",
+          "StructuredDoc.findById",
+          "json",
+          "res.status",
+          "toISOString",
+          "console.error"
+        ],
+        "getCourseProgress": [
+          "json",
+          "res.status",
+          "toISOString",
+          "console.error"
+        ]
+      },
+      "callsExternal": {
+        "getAvailableCourses": [
+          "console.error"
+        ],
+        "getCourse": [
+          "console.error"
+        ],
+        "getCourseProgress": [
+          "console.error"
+        ]
+      },
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "authMiddleware.ts",
+      "relativePath": "server-1/server/src/middleware/authMiddleware.ts",
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "Request",
+              "local": "Request"
+            },
+            {
+              "kind": "named",
+              "imported": "Response",
+              "local": "Response"
+            },
+            {
+              "kind": "named",
+              "imported": "NextFunction",
+              "local": "NextFunction"
+            }
+          ]
+        },
+        {
+          "source": "jsonwebtoken",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "jwt"
+            }
+          ]
+        },
+        {
+          "source": "../models/User",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "User"
+            }
+          ]
+        },
+        {
+          "source": "express",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "RequestHandler",
+              "local": "RequestHandler"
+            }
+          ]
+        }
+      ],
+      "exports": [],
+      "functions": [
+        {
+          "name": "authenticateUser",
+          "kind": "arrow",
+          "async": true,
+          "generator": false,
+          "params": [
+            {
+              "name": "req",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/src/middleware/authMiddleware\").AuthRequest"
+            },
+            {
+              "name": "res",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").Response<any, Record<string, any>>"
+            },
+            {
+              "name": "next",
+              "type": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").NextFunction"
+            }
+          ],
+          "returnType": "Promise<void>"
+        },
+        {
+          "name": "authorizeRoles",
+          "kind": "arrow",
+          "async": false,
+          "generator": false,
+          "params": [
+            {
+              "name": "roles",
+              "type": "string[]"
+            }
+          ],
+          "returnType": "import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express/index\").RequestHandler<import(\"C:/Users/HAI/AppData/Local/Temp/repo-0rMCh4/server-1/server/node_modules/@types/express-serve-static-core/index\").ParamsDictionary, any, any, qs.ParsedQs, Record<string, any>>"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [
+        "JWT_SECRET"
+      ],
+      "complexity": {
+        "authenticateUser": 4,
+        "authorizeRoles": 3
+      },
+      "calls": {
+        "authenticateUser": [
+          "json",
+          "res.status",
+          "jwt.verify",
+          "select",
+          "User.findById",
+          "next"
+        ],
+        "authorizeRoles": [
+          "roles.includes",
+          "json",
+          "res.status",
+          "next"
+        ]
+      },
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "StructuredDoc.ts",
+      "relativePath": "server-1/server/src/models/StructuredDoc.ts",
+      "imports": [
+        {
+          "source": "mongoose",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "Document",
+              "local": "Document"
+            },
+            {
+              "kind": "named",
+              "imported": "Schema",
+              "local": "Schema"
+            },
+            {
+              "kind": "default",
+              "local": "mongoose"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {},
+      "calls": {},
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "User.ts",
+      "relativePath": "server-1/server/src/models/User.ts",
+      "imports": [
+        {
+          "source": "mongoose",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "Document",
+              "local": "Document"
+            },
+            {
+              "kind": "named",
+              "imported": "Schema",
+              "local": "Schema"
+            },
+            {
+              "kind": "default",
+              "local": "mongoose"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {},
+      "calls": {},
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "aiRoutes.ts",
+      "relativePath": "server-1/server/src/routes/aiRoutes.ts",
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "RequestHandler",
+              "local": "RequestHandler"
+            },
+            {
+              "kind": "default",
+              "local": "express"
+            }
+          ]
+        },
+        {
+          "source": "../controllers/aiController",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "structureDoc",
+              "local": "structureDoc"
+            },
+            {
+              "kind": "named",
+              "imported": "saveDoc",
+              "local": "saveDoc"
+            },
+            {
+              "kind": "named",
+              "imported": "getUserDocs",
+              "local": "getUserDocs"
+            },
+            {
+              "kind": "named",
+              "imported": "getDoc",
+              "local": "getDoc"
+            },
+            {
+              "kind": "named",
+              "imported": "updateDoc",
+              "local": "updateDoc"
+            },
+            {
+              "kind": "named",
+              "imported": "addToCourse",
+              "local": "addToCourse"
+            },
+            {
+              "kind": "named",
+              "imported": "chatWithAI",
+              "local": "chatWithAI"
+            }
+          ]
+        },
+        {
+          "source": "../middleware/authMiddleware",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "authenticateUser",
+              "local": "authenticateUser"
+            },
+            {
+              "kind": "named",
+              "imported": "authorizeRoles",
+              "local": "authorizeRoles"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {},
+      "calls": {},
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "authRoutes.ts",
+      "relativePath": "server-1/server/src/routes/authRoutes.ts",
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "RequestHandler",
+              "local": "RequestHandler"
+            },
+            {
+              "kind": "default",
+              "local": "express"
+            }
+          ]
+        },
+        {
+          "source": "passport",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "passport"
+            }
+          ]
+        },
+        {
+          "source": "../controllers/authController",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "signup",
+              "local": "signup"
+            },
+            {
+              "kind": "named",
+              "imported": "login",
+              "local": "login"
+            },
+            {
+              "kind": "named",
+              "imported": "getMe",
+              "local": "getMe"
+            },
+            {
+              "kind": "named",
+              "imported": "logout",
+              "local": "logout"
+            }
+          ]
+        },
+        {
+          "source": "../utils/jwt",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "generateToken",
+              "local": "generateToken"
+            }
+          ]
+        },
+        {
+          "source": "../middleware/authMiddleware",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "authenticateUser",
+              "local": "authenticateUser"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [
+        "FRONTEND_ORIGIN"
+      ],
+      "complexity": {},
+      "calls": {},
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "courseRoutes.ts",
+      "relativePath": "server-1/server/src/routes/courseRoutes.ts",
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "RequestHandler",
+              "local": "RequestHandler"
+            },
+            {
+              "kind": "default",
+              "local": "express"
+            }
+          ]
+        },
+        {
+          "source": "../controllers/courseController",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "getAvailableCourses",
+              "local": "getAvailableCourses"
+            },
+            {
+              "kind": "named",
+              "imported": "getCourse",
+              "local": "getCourse"
+            },
+            {
+              "kind": "named",
+              "imported": "getCourseProgress",
+              "local": "getCourseProgress"
+            }
+          ]
+        },
+        {
+          "source": "../middleware/authMiddleware",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "authenticateUser",
+              "local": "authenticateUser"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {},
+      "calls": {},
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "aiml.ts",
+      "relativePath": "server-1/server/src/utils/aiml.ts",
+      "imports": [
+        {
+          "source": "axios",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "axios"
+            }
+          ]
+        },
+        {
+          "source": "dotenv",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "config",
+              "local": "config"
+            }
+          ]
+        },
+        {
+          "source": "path",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "path"
+            }
+          ]
+        }
+      ],
+      "exports": [],
+      "functions": [
+        {
+          "name": "callAimLapi",
+          "kind": "declaration",
+          "async": true,
+          "generator": false,
+          "params": [
+            {
+              "name": "prompt",
+              "type": "string"
+            }
+          ],
+          "returnType": "Promise<string>"
+        },
+        {
+          "name": "callChatAPI",
+          "kind": "declaration",
+          "async": true,
+          "generator": false,
+          "params": [
+            {
+              "name": "prompt",
+              "type": "string"
+            }
+          ],
+          "returnType": "Promise<string>"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [
+        "OPENROUTER_API_KEY",
+        "YOUR_SITE_URL",
+        "YOUR_SITE_NAME"
+      ],
+      "complexity": {
+        "callAimLapi": 6,
+        "callChatAPI": 3
+      },
+      "calls": {
+        "callAimLapi": [
+          "console.log",
+          "axios.post",
+          "JSON.parse",
+          "Array.isArray",
+          "console.error"
+        ],
+        "callChatAPI": [
+          "console.log",
+          "axios.post",
+          "content.trim",
+          "console.error"
+        ]
+      },
+      "callsExternal": {
+        "callAimLapi": [
+          "console.log",
+          "axios.post",
+          "console.error"
+        ],
+        "callChatAPI": [
+          "console.log",
+          "axios.post",
+          "console.error"
+        ]
+      },
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "jwt.ts",
+      "relativePath": "server-1/server/src/utils/jwt.ts",
+      "imports": [
+        {
+          "source": "jsonwebtoken",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "Secret",
+              "local": "Secret"
+            },
+            {
+              "kind": "named",
+              "imported": "SignOptions",
+              "local": "SignOptions"
+            },
+            {
+              "kind": "default",
+              "local": "jwt"
+            }
+          ]
+        }
+      ],
+      "exports": [],
+      "functions": [
+        {
+          "name": "generateToken",
+          "kind": "arrow",
+          "async": false,
+          "generator": false,
+          "params": [
+            {
+              "name": "payload",
+              "type": "object"
+            },
+            {
+              "name": "expiresIn",
+              "type": "string"
+            }
+          ],
+          "returnType": "any"
+        },
+        {
+          "name": "verifyToken",
+          "kind": "arrow",
+          "async": false,
+          "generator": false,
+          "params": [
+            {
+              "name": "token",
+              "type": "string"
+            }
+          ],
+          "returnType": "any"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [
+        "JWT_SECRET"
+      ],
+      "complexity": {
+        "generateToken": 1,
+        "verifyToken": 2
+      },
+      "calls": {
+        "generateToken": [
+          "jwt.sign"
+        ],
+        "verifyToken": [
+          "jwt.verify"
+        ]
+      },
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "openai.ts",
+      "relativePath": "server-1/server/src/utils/openai.ts",
+      "imports": [
+        {
+          "source": "openai",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "OpenAI"
+            }
+          ]
+        }
+      ],
+      "exports": [],
+      "functions": [],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [
+        "OPENAI_API_KEY"
+      ],
+      "complexity": {},
+      "calls": {},
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "axios.ts",
+      "relativePath": "frontend-1/frontend/src/api/axios.ts",
+      "imports": [
+        {
+          "source": "axios",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "axios"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {},
+      "calls": {},
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "AuthContext.tsx",
+      "relativePath": "frontend-1/frontend/src/auth/AuthContext.tsx",
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "createContext",
+              "local": "createContext"
+            },
+            {
+              "kind": "named",
+              "imported": "useContext",
+              "local": "useContext"
+            },
+            {
+              "kind": "named",
+              "imported": "useEffect",
+              "local": "useEffect"
+            },
+            {
+              "kind": "named",
+              "imported": "useState",
+              "local": "useState"
+            },
+            {
+              "kind": "default",
+              "local": "React"
+            }
+          ]
+        },
+        {
+          "source": "../api/axios",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "api"
+            }
+          ]
+        }
+      ],
+      "exports": [],
+      "functions": [
+        {
+          "name": "AuthProvider",
+          "kind": "arrow",
+          "async": false,
+          "generator": false,
+          "params": [
+            {
+              "name": "{ children }",
+              "type": "{ children: React.ReactNode; }"
+            }
+          ],
+          "returnType": "any"
+        },
+        {
+          "name": "useAuth",
+          "kind": "arrow",
+          "async": false,
+          "generator": false,
+          "params": [],
+          "returnType": "AuthContextType"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {
+        "AuthProvider": 4,
+        "useAuth": 2
+      },
+      "calls": {
+        "AuthProvider": [
+          "useState",
+          "setLoading",
+          "api.get",
+          "setUser",
+          "useEffect",
+          "catch",
+          "refetchUser",
+          "api.post"
+        ],
+        "useAuth": [
+          "useContext"
+        ]
+      },
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "Headname.tsx",
+      "relativePath": "frontend-1/frontend/src/auth/Headname.tsx",
+      "imports": [
+        {
+          "source": "framer-motion",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "motion",
+              "local": "motion"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [
+        {
+          "name": "Component",
+          "kind": "declaration",
+          "async": false,
+          "generator": false,
+          "params": [
+            {
+              "name": "{ title }",
+              "type": "HeadnameProps"
+            }
+          ],
+          "returnType": "any"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {
+        "Component": 1
+      },
+      "calls": {},
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "Login.tsx",
+      "relativePath": "frontend-1/frontend/src/auth/Login.tsx",
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useState",
+              "local": "useState"
+            }
+          ]
+        },
+        {
+          "source": "./Headname",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "Component"
+            }
+          ]
+        },
+        {
+          "source": "./AuthContext",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useAuth",
+              "local": "useAuth"
+            }
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useNavigate",
+              "local": "useNavigate"
+            }
+          ]
+        },
+        {
+          "source": "../images/image.png",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "gimg"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [
+        {
+          "name": "Login",
+          "kind": "declaration",
+          "async": false,
+          "generator": false,
+          "params": [],
+          "returnType": "any"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {
+        "Login": 2
+      },
+      "calls": {
+        "Login": [
+          "useState",
+          "useAuth",
+          "useNavigate",
+          "e.preventDefault",
+          "login",
+          "navigate",
+          "console.error",
+          "setEmail",
+          "setPassword"
+        ]
+      },
+      "callsExternal": {
+        "Login": [
+          "console.error"
+        ]
+      },
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "OAuthSuccess.tsx",
+      "relativePath": "frontend-1/frontend/src/auth/OAuthSuccess.tsx",
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useEffect",
+              "local": "useEffect"
+            }
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useNavigate",
+              "local": "useNavigate"
+            }
+          ]
+        },
+        {
+          "source": "./AuthContext",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useAuth",
+              "local": "useAuth"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [
+        {
+          "name": "OAuthSuccess",
+          "kind": "arrow",
+          "async": false,
+          "generator": false,
+          "params": [],
+          "returnType": "any"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {
+        "OAuthSuccess": 1
+      },
+      "calls": {
+        "OAuthSuccess": [
+          "useNavigate",
+          "useAuth",
+          "useEffect",
+          "catch",
+          "then",
+          "refetchUser",
+          "navigate"
+        ]
+      },
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "ProtectedRoute.tsx",
+      "relativePath": "frontend-1/frontend/src/auth/ProtectedRoute.tsx",
+      "imports": [
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "Navigate",
+              "local": "Navigate"
+            },
+            {
+              "kind": "named",
+              "imported": "Outlet",
+              "local": "Outlet"
+            }
+          ]
+        },
+        {
+          "source": "./AuthContext",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useAuth",
+              "local": "useAuth"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [
+        {
+          "name": "ProtectedRoute",
+          "kind": "arrow",
+          "async": false,
+          "generator": false,
+          "params": [
+            {
+              "name": "{allowedRoles}",
+              "type": "{ allowedRoles?: string[]; }"
+            }
+          ],
+          "returnType": "any"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {
+        "ProtectedRoute": 6
+      },
+      "calls": {
+        "ProtectedRoute": [
+          "useAuth",
+          "allowedRoles.includes"
+        ]
+      },
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "Signup.tsx",
+      "relativePath": "frontend-1/frontend/src/auth/Signup.tsx",
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useState",
+              "local": "useState"
+            }
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useNavigate",
+              "local": "useNavigate"
+            }
+          ]
+        },
+        {
+          "source": "../api/axios",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "api"
+            }
+          ]
+        },
+        {
+          "source": "../images/image.png",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "gimg"
+            }
+          ]
+        },
+        {
+          "source": "./Headname",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "Component"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [
+        {
+          "name": "Signup",
+          "kind": "declaration",
+          "async": false,
+          "generator": false,
+          "params": [],
+          "returnType": "any"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {
+        "Signup": 2
+      },
+      "calls": {
+        "Signup": [
+          "useNavigate",
+          "useState",
+          "e.preventDefault",
+          "api.post",
+          "navigate",
+          "console.error",
+          "setName",
+          "setEmail",
+          "setPassword"
+        ]
+      },
+      "callsExternal": {
+        "Signup": [
+          "console.error"
+        ]
+      },
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "ChatBot.tsx",
+      "relativePath": "frontend-1/frontend/src/components/ChatBot.tsx",
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useState",
+              "local": "useState"
+            },
+            {
+              "kind": "named",
+              "imported": "useRef",
+              "local": "useRef"
+            },
+            {
+              "kind": "named",
+              "imported": "useEffect",
+              "local": "useEffect"
+            },
+            {
+              "kind": "default",
+              "local": "React"
+            }
+          ]
+        },
+        {
+          "source": "../api/axios",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "api"
+            }
+          ]
+        },
+        {
+          "source": "../types/api",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "ChatMessage",
+              "local": "ChatMessage"
+            },
+            {
+              "kind": "named",
+              "imported": "ChatResponse",
+              "local": "ChatResponse"
+            },
+            {
+              "kind": "named",
+              "imported": "ErrorResponse",
+              "local": "ErrorResponse"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [
+        {
+          "name": "ChatBot",
+          "kind": "arrow",
+          "async": false,
+          "generator": false,
+          "params": [
+            {
+              "name": "{\r\n    courseId,\r\n    courseTitle,\r\n    currentModuleIndex,\r\n    currentLessonIndex,\r\n    currentLessonContent,\r\n    isDarkMode,\r\n    onClose\r\n}",
+              "type": "{ courseId: any; courseTitle: any; currentModuleIndex: any; currentLessonIndex: any; currentLessonContent: any; isDarkMode: any; onClose: any; }"
+            }
+          ],
+          "returnType": "any"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {
+        "ChatBot": 35
+      },
+      "calls": {
+        "ChatBot": [
+          "useState",
+          "useRef",
+          "messagesEndRef.current.scrollIntoView",
+          "useEffect",
+          "scrollToBottom",
+          "setMessages",
+          "toISOString",
+          "inputMessage.trim",
+          "setInputMessage",
+          "setIsLoading",
+          "api.post",
+          "e.preventDefault",
+          "handleSendMessage",
+          "setIsMinimized",
+          "array pipeline",
+          "toLocaleTimeString"
+        ]
+      },
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "DocumentStructurer.tsx",
+      "relativePath": "frontend-1/frontend/src/components/DocumentStructurer.tsx",
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useState",
+              "local": "useState"
+            },
+            {
+              "kind": "named",
+              "imported": "useEffect",
+              "local": "useEffect"
+            }
+          ]
+        },
+        {
+          "source": "../api/axios",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "api"
+            }
+          ]
+        },
+        {
+          "source": "../auth/AuthContext",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useAuth",
+              "local": "useAuth"
+            }
+          ]
+        },
+        {
+          "source": "../types/api",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "Module",
+              "local": "Module"
+            },
+            {
+              "kind": "named",
+              "imported": "StructuredDoc",
+              "local": "StructuredDoc"
+            },
+            {
+              "kind": "named",
+              "imported": "StructuredDocResponse",
+              "local": "StructuredDocResponse"
+            },
+            {
+              "kind": "named",
+              "imported": "ErrorResponse",
+              "local": "ErrorResponse"
+            },
+            {
+              "kind": "named",
+              "imported": "DocListItem",
+              "local": "DocListItem"
+            },
+            {
+              "kind": "named",
+              "imported": "DocListResponse",
+              "local": "DocListResponse"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [
+        {
+          "name": "DocumentStructurer",
+          "kind": "declaration",
+          "async": false,
+          "generator": false,
+          "params": [],
+          "returnType": "any"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {
+        "DocumentStructurer": 77
+      },
+      "calls": {
+        "DocumentStructurer": [
+          "useState",
+          "useAuth",
+          "useEffect",
+          "fetchUserDocs",
+          "setLoadingDocs",
+          "api.get",
+          "setDocuments",
+          "setError",
+          "e.preventDefault",
+          "aiInput.rawText.trim",
+          "setLoading",
+          "api.post",
+          "setStructuredDoc",
+          "setCurrentDocId",
+          "setAiInput",
+          "console.error",
+          "loadDocument",
+          "setShowAddForm",
+          "setSelectedModuleIndex",
+          "setManualInput",
+          "JSON.parse",
+          "JSON.stringify",
+          "lessons.push",
+          "updatedDoc.modules.findIndex",
+          "updatedDoc.modules.push",
+          "setEditingLesson",
+          "setEditedContent",
+          "setSaving",
+          "api.put",
+          "setEditedCourseTitle",
+          "setEditingCourseTitle",
+          "array pipeline",
+          "toLocaleDateString",
+          "handleCourseSelect",
+          "handleAddAIToExisting",
+          "handleAddToExisting",
+          "handleSaveEdit",
+          "handleEdit"
+        ]
+      },
+      "callsExternal": {
+        "DocumentStructurer": [
+          "console.error"
+        ]
+      },
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "Layout.tsx",
+      "relativePath": "frontend-1/frontend/src/components/Layout.tsx",
+      "imports": [
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "Link",
+              "local": "Link"
+            },
+            {
+              "kind": "named",
+              "imported": "Outlet",
+              "local": "Outlet"
+            },
+            {
+              "kind": "named",
+              "imported": "useNavigate",
+              "local": "useNavigate"
+            }
+          ]
+        },
+        {
+          "source": "../auth/AuthContext",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useAuth",
+              "local": "useAuth"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [
+        {
+          "name": "Layout",
+          "kind": "declaration",
+          "async": false,
+          "generator": false,
+          "params": [],
+          "returnType": "any"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {
+        "Layout": 6
+      },
+      "calls": {
+        "Layout": [
+          "useAuth",
+          "useNavigate",
+          "logout",
+          "navigate",
+          "getFullYear"
+        ]
+      },
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "StudentDashboard.tsx",
+      "relativePath": "frontend-1/frontend/src/components/StudentDashboard.tsx",
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useState",
+              "local": "useState"
+            },
+            {
+              "kind": "named",
+              "imported": "useEffect",
+              "local": "useEffect"
+            }
+          ]
+        },
+        {
+          "source": "../api/axios",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "api"
+            }
+          ]
+        },
+        {
+          "source": "../types/api",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "DocListItem",
+              "local": "DocListItem"
+            },
+            {
+              "kind": "named",
+              "imported": "DocListResponse",
+              "local": "DocListResponse"
+            },
+            {
+              "kind": "named",
+              "imported": "ErrorResponse",
+              "local": "ErrorResponse"
+            },
+            {
+              "kind": "named",
+              "imported": "StructuredDoc",
+              "local": "StructuredDoc"
+            },
+            {
+              "kind": "named",
+              "imported": "StructuredDocResponse",
+              "local": "StructuredDocResponse"
+            }
+          ]
+        },
+        {
+          "source": "./ChatBot",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "ChatBot"
+            }
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useNavigate",
+              "local": "useNavigate"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [
+        {
+          "name": "StudentDashboard",
+          "kind": "declaration",
+          "async": false,
+          "generator": false,
+          "params": [],
+          "returnType": "any"
+        },
+        {
+          "name": "CourseView",
+          "kind": "arrow",
+          "async": false,
+          "generator": false,
+          "params": [
+            {
+              "name": "{ docId, onBack }",
+              "type": "CourseViewProps"
+            }
+          ],
+          "returnType": "any"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {
+        "StudentDashboard": 20,
+        "CourseView": 57
+      },
+      "calls": {
+        "StudentDashboard": [
+          "useState",
+          "useNavigate",
+          "useEffect",
+          "fetchCourses",
+          "window.matchMedia",
+          "setIsDarkMode",
+          "setLoading",
+          "setError",
+          "api.get",
+          "setCourses",
+          "setSelectedCourseId",
+          "navigate",
+          "array pipeline",
+          "handleCourseSelect",
+          "toLocaleDateString"
+        ],
+        "CourseView": [
+          "useState",
+          "useEffect",
+          "loadCourse",
+          "window.matchMedia",
+          "setIsDarkMode",
+          "setLoading",
+          "setError",
+          "api.get",
+          "setCourse",
+          "setCurrentModuleIndex",
+          "setCurrentLessonIndex",
+          "setShowSidebar",
+          "setShowChatBot",
+          "array pipeline",
+          "handleModuleSelect",
+          "handleLessonSelect"
+        ]
+      },
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "AdminDashboard.tsx",
+      "relativePath": "frontend-1/frontend/src/pages/AdminDashboard.tsx",
+      "imports": [
+        {
+          "source": "../auth/AuthContext",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useAuth",
+              "local": "useAuth"
+            }
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useNavigate",
+              "local": "useNavigate"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [
+        {
+          "name": "AdminDashboard",
+          "kind": "declaration",
+          "async": false,
+          "generator": false,
+          "params": [],
+          "returnType": "any"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {
+        "AdminDashboard": 1
+      },
+      "calls": {
+        "AdminDashboard": [
+          "useAuth",
+          "useNavigate",
+          "navigate"
+        ]
+      },
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "AdminStructure.tsx",
+      "relativePath": "frontend-1/frontend/src/pages/AdminStructure.tsx",
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useState",
+              "local": "useState"
+            }
+          ]
+        },
+        {
+          "source": "../api/axios",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "api"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [
+        {
+          "name": "AdminStructure",
+          "kind": "declaration",
+          "async": false,
+          "generator": false,
+          "params": [],
+          "returnType": "any"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {
+        "AdminStructure": 7
+      },
+      "calls": {
+        "AdminStructure": [
+          "useState",
+          "setLoading",
+          "setError",
+          "api.post",
+          "setStructured",
+          "setRawText",
+          "JSON.stringify"
+        ]
+      },
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "Dashboard.tsx",
+      "relativePath": "frontend-1/frontend/src/pages/Dashboard.tsx",
+      "imports": [
+        {
+          "source": "../auth/AuthContext",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useAuth",
+              "local": "useAuth"
+            }
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useNavigate",
+              "local": "useNavigate"
+            }
+          ]
+        },
+        {
+          "source": "framer-motion",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "motion",
+              "local": "motion"
+            }
+          ]
+        },
+        {
+          "source": "@heroicons/react/24/outline",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "AcademicCapIcon",
+              "local": "AcademicCapIcon"
+            },
+            {
+              "kind": "named",
+              "imported": "BookOpenIcon",
+              "local": "BookOpenIcon"
+            },
+            {
+              "kind": "named",
+              "imported": "ChatBubbleLeftRightIcon",
+              "local": "ChatBubbleLeftRightIcon"
+            },
+            {
+              "kind": "named",
+              "imported": "TrophyIcon",
+              "local": "TrophyIcon"
+            },
+            {
+              "kind": "named",
+              "imported": "ArrowRightCircleIcon",
+              "local": "ArrowRightCircleIcon"
+            }
+          ]
+        },
+        {
+          "source": "react",
+          "specifiers": [
+            {
+              "kind": "named",
+              "imported": "useState",
+              "local": "useState"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [
+        {
+          "name": "Dashboard",
+          "kind": "declaration",
+          "async": false,
+          "generator": false,
+          "params": [],
+          "returnType": "any"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {
+        "Dashboard": 15
+      },
+      "calls": {
+        "Dashboard": [
+          "useAuth",
+          "useNavigate",
+          "useState",
+          "localStorage.getItem",
+          "setIsDarkMode",
+          "localStorage.setItem",
+          "document.documentElement.classList.toggle",
+          "array pipeline",
+          "navigate"
+        ]
+      },
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "Unauthorized.tsx",
+      "relativePath": "frontend-1/frontend/src/pages/Unauthorized.tsx",
+      "imports": [],
+      "exports": [
+        {
+          "type": "default",
+          "name": "default"
+        }
+      ],
+      "functions": [
+        {
+          "name": "Unauthorized",
+          "kind": "declaration",
+          "async": false,
+          "generator": false,
+          "params": [],
+          "returnType": "any"
+        }
+      ],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {
+        "Unauthorized": 1
+      },
+      "calls": {},
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "api.ts",
+      "relativePath": "frontend-1/frontend/src/types/api.ts",
+      "imports": [],
+      "exports": [],
+      "functions": [],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "envVars": [],
+      "complexity": {},
+      "calls": {},
+      "callsExternal": {},
+      "nestRoutes": [],
+      "nextApiRoutes": []
+    },
+    {
+      "file": "eslint.config.js",
+      "relativePath": "frontend-1/frontend/eslint.config.js",
+      "imports": [
+        {
+          "source": "@eslint/js",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "js"
+            }
+          ]
+        },
+        {
+          "source": "globals",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "globals"
+            }
+          ]
+        },
+        {
+          "source": "eslint-plugin-react-hooks",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "reactHooks"
+            }
+          ]
+        },
+        {
+          "source": "eslint-plugin-react-refresh",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "reactRefresh"
+            }
+          ]
+        },
+        {
+          "source": "typescript-eslint",
+          "specifiers": [
+            {
+              "kind": "default",
+              "local": "tseslint"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "type": "default",
+          "name": null
+        }
+      ],
+      "functions": [],
+      "classes": [],
+      "reactComponents": [],
+      "expressRoutes": [],
+      "complexity": {},
+      "calls": {},
+      "callsExternal": {}
+    }
+  ]
+}

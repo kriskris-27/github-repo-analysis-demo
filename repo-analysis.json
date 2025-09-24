@@ -1,0 +1,223 @@
+[
+  {
+    "file": "App.js",
+    "relativePath": "App.js",
+    "functions": [
+      {
+        "name": "App",
+        "kind": "declaration",
+        "params": [],
+        "async": false,
+        "generator": false,
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 0,
+            "index": 70
+          },
+          "end": {
+            "line": 8,
+            "column": 1,
+            "index": 188
+          }
+        }
+      }
+    ],
+    "classes": [],
+    "reactComponents": [
+      {
+        "type": "FunctionalComponent",
+        "name": "App"
+      }
+    ],
+    "imports": [
+      {
+        "source": "react",
+        "specifiers": [
+          {
+            "kind": "default",
+            "local": "React"
+          }
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+          },
+          "end": {
+            "line": 1,
+            "column": 26,
+            "index": 26
+          }
+        }
+      },
+      {
+        "source": "./Calculator",
+        "specifiers": [
+          {
+            "kind": "default",
+            "local": "Calculator"
+          }
+        ],
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 0,
+            "index": 28
+          },
+          "end": {
+            "line": 2,
+            "column": 38,
+            "index": 66
+          }
+        }
+      }
+    ],
+    "exports": [
+      {
+        "type": "default",
+        "name": "App",
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 0,
+            "index": 190
+          },
+          "end": {
+            "line": 9,
+            "column": 19,
+            "index": 209
+          }
+        }
+      }
+    ]
+  },
+  {
+    "file": "Calculator.js",
+    "relativePath": "Calculator.js",
+    "functions": [],
+    "classes": [
+      {
+        "name": "Calculator",
+        "methods": [
+          {
+            "name": "add",
+            "kind": "method",
+            "static": false,
+            "async": false,
+            "generator": false,
+            "params": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "name": "subtract",
+            "kind": "method",
+            "static": false,
+            "async": false,
+            "generator": false,
+            "params": [
+              "a",
+              "b"
+            ]
+          }
+        ]
+      }
+    ],
+    "reactComponents": [],
+    "imports": [],
+    "exports": [
+      {
+        "type": "default",
+        "name": "Calculator",
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 2,
+            "index": 122
+          },
+          "end": {
+            "line": 9,
+            "column": 28,
+            "index": 148
+          }
+        }
+      }
+    ]
+  },
+  {
+    "file": "utils.js",
+    "relativePath": "utils.js",
+    "functions": [
+      {
+        "name": "multiply",
+        "kind": "declaration",
+        "params": [
+          "a",
+          "b"
+        ],
+        "async": false,
+        "generator": false,
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 7,
+            "index": 7
+          },
+          "end": {
+            "line": 3,
+            "column": 3,
+            "index": 56
+          }
+        }
+      }
+    ],
+    "classes": [],
+    "reactComponents": [],
+    "imports": [],
+    "exports": [
+      {
+        "type": "named",
+        "specifiers": [],
+        "source": null,
+        "declarations": [
+          "multiply"
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+          },
+          "end": {
+            "line": 3,
+            "column": 3,
+            "index": 56
+          }
+        }
+      },
+      {
+        "type": "named",
+        "specifiers": [],
+        "source": null,
+        "declarations": [
+          "PI"
+        ],
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 2,
+            "index": 64
+          },
+          "end": {
+            "line": 5,
+            "column": 25,
+            "index": 87
+          }
+        }
+      }
+    ]
+  }
+]

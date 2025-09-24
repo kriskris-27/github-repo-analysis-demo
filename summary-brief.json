@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "name": "ThesisLP-dock",
+    "repoUrl": "https://github.com/kriskris-27/ThesisLP-dock.git",
+    "appType": "app"
+  },
+  "stack": {
+    "language": "js",
+    "frameworks": [],
+    "libs": [
+      "vite",
+      "@vitejs/plugin-react",
+      "express",
+      "cors",
+      "dotenv",
+      "path",
+      "cookie-parser",
+      "passport",
+      "mongoose",
+      "react-router-dom",
+      "react",
+      "react-dom/client"
+    ]
+  },
+  "entrypoints": [],
+  "env": [
+    {
+      "name": "FRONTEND_ORIGIN"
+    },
+    {
+      "name": "PORT"
+    },
+    {
+      "name": "MONGO_URI"
+    },
+    {
+      "name": "GOOGLE_CLIENT_ID"
+    },
+    {
+      "name": "GOOGLE_CLIENT_SECRET"
+    },
+    {
+      "name": "GOOGLE_CALLBACK_URL"
+    },
+    {
+      "name": "NODE_ENV"
+    },
+    {
+      "name": "JWT_SECRET"
+    },
+    {
+      "name": "OPENROUTER_API_KEY"
+    },
+    {
+      "name": "YOUR_SITE_URL"
+    },
+    {
+      "name": "YOUR_SITE_NAME"
+    },
+    {
+      "name": "OPENAI_API_KEY"
+    }
+  ],
+  "api": [],
+  "controllers": [
+    {
+      "name": "aiController",
+      "file": "server-1/server/src/controllers/aiController.ts",
+      "externalCalls": [
+        "console.log",
+        "console.error",
+        "console.error",
+        "console.error",
+        "console.error",
+        "console.error"
+      ],
+      "readsModels": [
+        "StructuredDoc",
+        "User"
+      ]
+    },
+    {
+      "name": "authController",
+      "file": "server-1/server/src/controllers/authController.ts",
+      "externalCalls": [],
+      "readsModels": [
+        "StructuredDoc",
+        "User"
+      ]
+    },
+    {
+      "name": "courseController",
+      "file": "server-1/server/src/controllers/courseController.ts",
+      "externalCalls": [
+        "console.error",
+        "console.error",
+        "console.error"
+      ],
+      "readsModels": [
+        "StructuredDoc",
+        "User"
+      ]
+    }
+  ],
+  "models": [
+    {
+      "name": "StructuredDoc",
+      "file": "server-1/server/src/models/StructuredDoc.ts"
+    },
+    {
+      "name": "User",
+      "file": "server-1/server/src/models/User.ts"
+    }
+  ],
+  "workflows": [
+    {
+      "file": "frontend-1/frontend/src/App.tsx",
+      "function": "RootRedirect",
+      "steps": [
+        "Execute main logic"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/auth/AuthContext.tsx",
+      "function": "useAuth",
+      "steps": [
+        "Execute main logic"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/auth/Login.tsx",
+      "function": "Login",
+      "steps": [
+        "Log result to console"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/auth/OAuthSuccess.tsx",
+      "function": "OAuthSuccess",
+      "steps": [
+        "Execute main logic"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/auth/Signup.tsx",
+      "function": "Signup",
+      "steps": [
+        "Log result to console"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/components/DocumentStructurer.tsx",
+      "function": "DocumentStructurer",
+      "steps": [
+        "Log result to console"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/components/Layout.tsx",
+      "function": "Layout",
+      "steps": [
+        "Execute main logic"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/components/StudentDashboard.tsx",
+      "function": "StudentDashboard",
+      "steps": [
+        "Execute main logic"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/pages/AdminDashboard.tsx",
+      "function": "AdminDashboard",
+      "steps": [
+        "Execute main logic"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/pages/AdminStructure.tsx",
+      "function": "AdminStructure",
+      "steps": [
+        "Execute main logic"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/pages/Dashboard.tsx",
+      "function": "Dashboard",
+      "steps": [
+        "Execute main logic"
+      ]
+    },
+    {
+      "file": "frontend-1/frontend/src/pages/Unauthorized.tsx",
+      "function": "Unauthorized",
+      "steps": [
+        "Execute main logic"
+      ]
+    }
+  ],
+  "risks": [],
+  "repo": {
+    "hasReadme": true,
+    "hasDocker": false,
+    "hasCI": false
+  },
+  "size": {
+    "files": 36,
+    "hotspots": [
+      "frontend-1/frontend/src/components/DocumentStructurer.tsx",
+      "frontend-1/frontend/src/components/ChatBot.tsx",
+      "frontend-1/frontend/src/components/StudentDashboard.tsx",
+      "frontend-1/frontend/src/pages/Dashboard.tsx",
+      "server-1/server/src/controllers/aiController.ts"
+    ]
+  },
+  "narrative": "ThesisLP-dock is a codebase providing retail point-of-sale capabilities. It is built with vite, @vitejs/plugin-react, express, cors, dotenv, path. Key features include user authentication and session management. Data is modeled with Mongoose schemas such as StructuredDoc, User. The project follows a conventional MVC structure (routes → controllers → models). A README is present for basic guidance. No CI configuration was detected."
+}
